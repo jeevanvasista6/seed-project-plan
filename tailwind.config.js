@@ -9,17 +9,17 @@ export default {
     extend: {
       colors: {
         quentlex: {
-          gold: 'hsl(42, 51%, 47%)',      // #B48D3A
-          dark: 'hsl(220, 23%, 18%)',     // #212A35
-          navy: 'hsl(220, 32%, 15%)',     // #1A2332
-          warm: 'hsl(220, 13%, 46%)',     // #6B7280
-          light: 'hsl(220, 13%, 91%)',    // #F3F4F6
-          blue: 'hsl(217, 91%, 60%)',     // #3B82F6
-          green: 'hsl(162, 85%, 42%)',    // #10B981
-          amber: 'hsl(38, 92%, 50%)',     // #F59E0B
-          white: 'hsl(0, 0%, 100%)',      // #FFFFFF
-          off: 'hsl(0, 0%, 98%)',         // #FAFAFA
-          charcoal: 'hsl(220, 13%, 36%)'  // #374151
+          gold: 'hsl(42, 51%, 47%)',      // #B48D3A - Primary brand gold
+          dark: 'hsl(220, 23%, 18%)',     // #212A35 - Dark text
+          navy: 'hsl(220, 32%, 15%)',     // #1A2332 - Secondary dark
+          warm: 'hsl(220, 13%, 46%)',     // #6B7280 - Body text
+          light: 'hsl(220, 13%, 94%)',    // #F1F2F4 - Light background
+          blue: 'hsl(217, 91%, 60%)',     // #3B82F6 - Accent blue
+          green: 'hsl(162, 85%, 42%)',    // #10B981 - Success green
+          amber: 'hsl(38, 92%, 50%)',     // #F59E0B - Primary CTA orange
+          white: 'hsl(0, 0%, 100%)',      // #FFFFFF - Pure white
+          off: 'hsl(0, 0%, 99%)',         // #FCFCFC - Off white
+          charcoal: 'hsl(220, 13%, 36%)'  // #374151 - Medium text
         }
       },
       animation: {
@@ -58,10 +58,10 @@ export default {
         }
       },
       backgroundImage: {
-        'luxury-gradient': 'linear-gradient(135deg, hsl(0, 0%, 98%) 0%, hsl(220, 13%, 91%) 100%)',
+        'luxury-gradient': 'linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(220, 13%, 99%) 100%)',
         'gold-gradient': 'linear-gradient(135deg, hsl(42, 51%, 47%) 0%, hsl(38, 92%, 50%) 100%)',
-        'navy-gradient': 'linear-gradient(135deg, hsl(220, 23%, 18%) 0%, hsl(220, 32%, 15%) 100%)',
-        'shimmer-gradient': 'linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)'
+        'light-gradient': 'linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 98%) 100%)',
+        'shimmer-gradient': 'linear-gradient(90deg, transparent, rgba(181,134,59,0.1), transparent)'
       }
     },
   },

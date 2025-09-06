@@ -1,52 +1,48 @@
-/* === QUENTLEX INSTITUTIONAL BRAND SYSTEM === */
-@import './App.css';
+/* === QUENTLEX LUXURY LIGHT BRAND SYSTEM === */
 
-/* Project styles */
-
-/* Brand Variables - Exact Specifications */
+/* Premium Brand Variables - Light Theme */
 :root {
-  /* Primary Brand Colors - HSL for consistency */
+  /* Primary Brand Colors - Light Optimized */
   --ql-gold: hsl(42, 51%, 47%);      /* #B48D3A */
   --ql-dark: hsl(220, 23%, 18%);     /* #212A35 */
   
   /* Secondary Colors */
   --ql-navy: hsl(220, 32%, 15%);     /* #1A2332 */
   --ql-warm: hsl(220, 13%, 46%);     /* #6B7280 */
-  --ql-light: hsl(220, 13%, 91%);    /* #F3F4F6 */
+  --ql-light: hsl(220, 13%, 96%);    /* #F8F9FA - Lighter for luxury feel */
   
-  /* Accent Colors */
+  /* Accent Colors - Matching Reference */
   --ql-blue: hsl(217, 91%, 60%);     /* #3B82F6 */
-  --ql-green: hsl(162, 85%, 42%);    /* #10B981 */
-  --ql-amber: hsl(38, 92%, 50%);     /* #F59E0B */
+  --ql-green: hsl(162, 85%, 42%);    /* #10B981 - Success/verify green */
+  --ql-amber: hsl(38, 92%, 50%);     /* #F59E0B - Primary CTA orange */
   
-  /* Neutrals */
-  --ql-white: hsl(0, 0%, 100%);      /* #FFFFFF */
-  --ql-off: hsl(0, 0%, 98%);         /* #FAFAFA */
+  /* Luxury Light Neutrals */
+  --ql-white: hsl(0, 0%, 100%);      /* #FFFFFF - Pure white */
+  --ql-off: hsl(0, 0%, 99%);         /* #FCFCFC - Luxury off-white */
   --ql-char: hsl(220, 13%, 36%);     /* #374151 */
   
-  /* Luxury Gradients */
-  --luxury-shimmer: linear-gradient(135deg, 
-    hsl(0, 0%, 98%) 0%, 
-    hsl(220, 13%, 91%) 30%, 
-    hsl(42, 51%, 97%) 50%,
-    hsl(220, 13%, 91%) 70%, 
+  /* Premium Light Gradients */
+  --luxury-light: linear-gradient(135deg, 
+    hsl(0, 0%, 100%) 0%, 
+    hsl(220, 13%, 99%) 50%, 
     hsl(0, 0%, 98%) 100%);
     
-  --gold-shimmer: linear-gradient(135deg,
+  --gold-accent: linear-gradient(135deg,
     hsl(42, 51%, 47%) 0%,
-    hsl(42, 61%, 57%) 30%,
-    hsl(38, 92%, 50%) 50%,
-    hsl(42, 61%, 57%) 70%,
-    hsl(42, 51%, 47%) 100%);
+    hsl(38, 92%, 50%) 100%);
+
+  --green-accent: linear-gradient(135deg,
+    hsl(162, 85%, 42%) 0%,
+    hsl(162, 75%, 48%) 100%);
   
-  /* Layout System */
-  --content-width: 1140px;
-  --gutter-mobile: 24px;
-  --gutter-desktop: 32px;
+  /* Layout System - Spacious for luxury */
+  --content-width: 1200px;
+  --gutter-mobile: 32px;
+  --gutter-desktop: 48px;
   --baseline: 8px;
-  --section-spacing-sm: 64px;
-  --section-spacing-lg: 120px;
-  --card-radius: 8px;
+  --section-spacing-sm: 80px;
+  --section-spacing-lg: 128px;
+  --card-radius: 16px;
   
   /* Typography System */
   --font-serif: 'Spectral', Georgia, Times, serif;
@@ -111,14 +107,14 @@
   color: var(--ql-warm);
 }
 
-/* === LUXURY GRADIENT SPECIFICATIONS === */
+/* === LUXURY LIGHT BACKGROUND SYSTEM === */
 
-/* 1. Luxury Neutral Gradient (Legal Gravitas) */
+/* 1. Premium Hero Background (Light & Airy) */
 .ql-hero-bg {
   background: 
-    linear-gradient(135deg, #FAFAFA 0%, #F3F4F6 100%),
-    linear-gradient(135deg, rgba(180, 141, 58, 0.05) 0%, rgba(180, 141, 58, 0.02) 100%),
-    radial-gradient(1200px 600px at 20% 10%, rgba(180, 141, 58, 0.08) 0%, transparent 70%);
+    linear-gradient(135deg, #FFFFFF 0%, #FCFCFC 50%, #F8F9FA 100%),
+    radial-gradient(ellipse at 20% 30%, rgba(245, 158, 11, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 70%, rgba(16, 185, 129, 0.03) 0%, transparent 60%);
   position: relative;
   overflow: hidden;
 }
@@ -131,8 +127,7 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.02) 0%, transparent 50%);
+    radial-gradient(circle at 60% 40%, rgba(181, 134, 59, 0.02) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
 }
@@ -225,21 +220,21 @@
   z-index: 1;
 }
 
-/* === LUXURY BUTTON SYSTEM === */
+/* === PREMIUM LIGHT BUTTON SYSTEM === */
 
 .ql-btn-primary {
-  background: linear-gradient(135deg, var(--ql-blue) 0%, #2563EB 100%);
+  background: var(--gold-accent);
   color: var(--ql-white);
   font-family: var(--font-sans);
-  font-weight: 500;
+  font-weight: 600;
   padding: 16px 32px;
-  border-radius: var(--card-radius);
-  border: none;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
   cursor: pointer;
-  transition: all 300ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: all 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
   box-shadow: 
-    0 4px 12px rgba(59, 130, 246, 0.25),
-    0 2px 4px rgba(0, 0, 0, 0.1);
+    0 4px 12px rgba(245, 158, 11, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
   position: relative;
   overflow: hidden;
@@ -252,15 +247,15 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 500ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .ql-btn-primary:hover {
-  transform: translateY(-2px) scale(1.02);
+  transform: translateY(-1px) scale(1.01);
   box-shadow: 
-    0 8px 24px rgba(59, 130, 246, 0.35),
-    0 4px 8px rgba(0, 0, 0, 0.15);
+    0 6px 20px rgba(245, 158, 11, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .ql-btn-primary:hover::before {
@@ -268,43 +263,30 @@
 }
 
 .ql-btn-secondary {
-  background: linear-gradient(135deg, transparent 0%, rgba(180, 141, 58, 0.05) 100%);
+  background: var(--ql-white);
   color: var(--ql-dark);
   font-family: var(--font-sans);
-  font-weight: 500;
+  font-weight: 600;
   padding: 16px 32px;
-  border-radius: var(--card-radius);
-  border: 2px solid transparent;
-  background-clip: padding-box;
+  border-radius: 12px;
+  border: 1px solid rgba(181, 134, 59, 0.2);
   cursor: pointer;
-  transition: all 300ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: all 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
   font-size: 1rem;
   position: relative;
   overflow: hidden;
-}
-
-.ql-btn-secondary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, var(--ql-gold), #A67C2A);
-  border-radius: inherit;
-  padding: 2px;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: xor;
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .ql-btn-secondary:hover {
-  transform: translateY(-2px) scale(1.02);
-  background: linear-gradient(135deg, var(--ql-gold) 0%, #A67C2A 100%);
-  color: var(--ql-white);
+  transform: translateY(-1px) scale(1.01);
+  background: rgba(245, 158, 11, 0.05);
+  border-color: var(--ql-amber);
   box-shadow: 
-    0 8px 24px rgba(180, 141, 58, 0.35),
-    0 4px 8px rgba(0, 0, 0, 0.15);
+    0 4px 16px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .ql-btn-verify {
