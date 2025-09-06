@@ -38,7 +38,7 @@ const Header = () => {
                 <li key={index}>
                   <a 
                     href={item.href}
-                    className="group relative px-6 py-3 rounded-xl text-quentlex-warm hover:text-quentlex-dark transition-all duration-300 flex items-center gap-2 hover:bg-quentlex-white/80"
+                    className="group relative px-6 py-1 rounded-xl text-quentlex-warm hover:text-quentlex-dark transition-all duration-300 flex items-center gap-2 hover:bg-quentlex-white/80"
                     onMouseEnter={() => setHoveredItem(index)}
                     onMouseLeave={() => setHoveredItem(null)}
                   >
@@ -59,7 +59,7 @@ const Header = () => {
           
           {/* Enhanced CTA Button */}
           <div className="hidden md:block">
-            <button className="group relative overflow-hidden px-8 py-4 bg-navy-gradient text-quentlex-white font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-quentlex-gold/30">
+            <button className="group relative overflow-hidden px-8 py-3 bg-navy-gradient text-quentlex-white font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-quentlex-gold/30">
               <div className="relative z-10 flex items-center gap-2">
                 <span>Book a Demo</span>
                 <div className="w-2 h-2 bg-quentlex-gold rounded-full animate-pulse"></div>

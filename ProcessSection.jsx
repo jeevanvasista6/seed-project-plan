@@ -63,7 +63,7 @@ const ProcessSection = () => {
           <div className="hidden lg:block">
             <div className="flex items-start justify-between mb-8 relative">
               {/* Connecting line */}
-              <div className="absolute top-16 left-20 right-20 h-1 bg-gradient-to-r from-quentlex-gold via-quentlex-blue to-quentlex-green opacity-30"></div>
+              {/* <div className="absolute top-16 left-20 right-20 h-1 bg-gradient-to-r from-quentlex-gold via-quentlex-blue to-quentlex-green opacity-30"></div> */}
               
               {steps.map((step, index) => (
                 <div key={index} className="flex items-center group">

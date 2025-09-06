@@ -107,7 +107,7 @@ const ProblemSection = ({id}) => {
           <div className="group relative">
             <div className="absolute inset-0 bg-gradient-to-br from-quentlex-gold/20 to-quentlex-green/10 rounded-2xl blur-xl opacity-50 animate-luxury-glow"></div>
             
-            <div className="relative ql-card-elevated bg-gradient-to-br from-quentlex-white to-quentlex-gold/5 border-2 border-quentlex-gold/30">
+            <div className="relative ql-card bg-gradient-to-br from-quentlex-white to-quentlex-gold/5 border-2 border-quentlex-gold/30">
               <div className="flex items-center gap-3 mb-6">
                 <ArrowUpCircle className="w-6 h-6 text-quentlex-green animate-float" />
                 <h4 className="ql-h3 text-quentlex-gold">With Quentlex</h4>

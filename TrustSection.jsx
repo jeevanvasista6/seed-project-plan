@@ -145,7 +145,7 @@ const TrustSection = ({id}) => {
                     <div className="absolute top-0 left-0 w-full h-2 bg-navy-gradient"></div>
                     
                     <div className="relative z-10">
-                      <div className="flex items-center gap-6 mb-4">
+                      <div className="flex items-center gap-6 mb-4 pl-4">
                         <div className="relative">
                           <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${advisor.gradient} border-2 border-quentlex-navy/30 flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300`}>
                             <advisor.icon className="w-10 h-10 text-quentlex-navy group-hover:text-quentlex-gold transition-colors duration-300" />
@@ -160,7 +160,7 @@ const TrustSection = ({id}) => {
                           </div>
                         </div>
                         
-                        <div className="flex-1">
+                        <div className="flex-1 pt-4">
                           <h4 className="font-bold text-xl text-quentlex-dark group-hover:text-quentlex-navy transition-colors duration-300">
                             {advisor.name}
                           </h4>
@@ -191,7 +191,7 @@ const TrustSection = ({id}) => {
                     <div className="absolute top-0 left-0 w-full h-2 bg-navy-gradient"></div>
                     
                     <div className="relative z-10">
-                      <div className="flex items-center gap-6 mb-4">
+                      <div className="flex items-center gap-6 mb-4 pl-4">
                         <div className="relative">
                           <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${advisor.gradient} border-2 border-quentlex-navy/30 flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300`}>
                             <advisor.icon className="w-10 h-10 text-quentlex-navy group-hover:text-quentlex-gold transition-colors duration-300" />
@@ -206,7 +206,7 @@ const TrustSection = ({id}) => {
                           </div>
                         </div>
                         
-                        <div className="flex-1">
+                        <div className="flex-1 pt-4">
                           <h4 className="font-bold text-xl text-quentlex-dark group-hover:text-quentlex-navy transition-colors duration-300">
                             {advisor.name}
                           </h4>
